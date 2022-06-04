@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Flexbox</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_title">
+                <h1>Flexbox</h1>
+            </div>
+            <div class="nav_links" id="navLinks">
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="flex-container">
+            <div class="container">
+                <div>
+                    <h2 class="flexbox_title">FlexBox Crash Course</h2>
+                <p>This crash course was created by Brad Traversy to help you learn the basics of flexbox. Flexbox is a very important and useful tool in CSS.</p>
+                </div>
+            <div class="image">
+                <img src="https://traversymedia.com/images/grid.svg" alt="" />
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="flex-boxes">
+        <div class="container">
+            <div class="box">
+                <h2>
+                    <i class="fas fa-arrows-alt-v"></i> Alignment & Space</h2>
+                <p>
+                  A more efficient way to lay out, align and distribute space among
+                  items in a container
+                </p>
+            </div>
+
+            
+        <div class="box">
+            <h2><i class="fas fa-arrows-alt"></i>Tricky Positioning</h2>
+            <p>
+              Flexbox usually solves tricky problems including how to position or
+              dynamically resize elements on a page
+            </p>
+          </div>
+
+          <div class="box">
+            <h2><i class="fas fa-mobile"></i>Responsive Design</h2>
+            <p>
+              Flexbox makes building a website layout (and making it responsive!)
+              much, much easier
+            </p>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
